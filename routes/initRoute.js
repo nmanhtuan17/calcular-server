@@ -1,8 +1,10 @@
 const userRoute = require('./userRoute')
-const courseRouter = require('./course')
+const courseRoute = require('./course')
+const tuitionRoute = require('./tuitionRoute')
 const initRoute = (app) => {
-    app.use('/api/courses', courseRouter)
+    app.use('/api/courses', courseRoute)
     app.use('/api/users', userRoute)
+    app.use('/api/semester', tuitionRoute)
 }
 
 

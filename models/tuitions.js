@@ -7,7 +7,8 @@ const Tuition = mongoose.Schema({
     nam: {type: String, require: true},
     hocPhi: {type: Number, require: true},
     soTin: {type: Number, require: true},
-    soMon: {type: Number, require: true}
+    soMon: {type: Number, require: true},
+    user: {type: String, require: true}
 })
 
 

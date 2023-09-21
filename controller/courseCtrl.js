@@ -14,7 +14,6 @@ module.exports = {
     addCourse: async (req, res) => {
         try {
             const course = req.body
-            console.log(course);
             const newCourse = new Course(course)
             await newCourse.save()
             res.status(200).end()
